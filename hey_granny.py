@@ -12,11 +12,11 @@ while True:
     users_response = input('Enter some text: ')
     if users_response == "GOODBYE" or users_response == "BYE":
         print("LEAVING SO SOON?")
-        input("Say bye for the last time: ")
-        print("LATER, SKATER!")
-        break
+        maybe_last_response = input("Say bye for the last time: ")
+        if grannys_Response(maybe_last_response):
+          continue
+        else:
+          print("LATER, SKATER!")
+          break
     else:
         grannys_Response(users_response)
-
-    
-   
